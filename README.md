@@ -1,6 +1,10 @@
 # 项目展示
 - Html+CSS+js
+<<<<<<< HEAD
   - [种地页面](https://Noisyee.github.io/../../种地/index.html)
+=======
+  - [种地页面](https://Noisyee.github.io/../../../Html~CSS/种地/index.html)
+>>>>>>> a9ec37ccfe6f35c874133177a64bbd702c050993
 - JavaScript
   - [时钟]
   - [飞机大战] 
