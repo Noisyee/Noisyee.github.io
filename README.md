@@ -6,7 +6,7 @@
   - [飞机大战](https://Noisyee.github.io/../../AirWar/index.html)
 - JQuery
   - [全屏滚动]
-  - [图片倍数放大镜](https://Noisyee.github.io/../../图片放大镜倍数放大/index.html)
+  - [图片倍数放大镜](https://Noisyee.github.io/../../../JQuery/图片放大镜倍数放大/index.html)
 - BootStrap
   - [响应式页面]
 - CSS3
