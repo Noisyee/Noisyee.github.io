@@ -3,7 +3,7 @@
   - [种地页面](https://Noisyee.github.io/../../种地/index.html)
 - JavaScript
   - [时钟](https://Noisyee.github.io/../../TextWithAnOnlyHtml/clock.html)
-  - [飞机大战](https://Noisyee.github.io/../../../JavaScript/AirWar/index.html)
+  - [飞机大战](https://Noisyee.github.io/../../AirWar/index.html)
 - JQuery
   - [全屏滚动]
   - [图片倍数放大镜]
