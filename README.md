@@ -2,7 +2,7 @@
 - Html+CSS+js
   - [种地页面](https://Noisyee.github.io/../../种地/index.html)
 - JavaScript
-  - [时钟]
+  - [时钟](https://Noisyee.github.io/../../../JavaScript/test/clock.html)
   - [飞机大战] 
 - JQuery
   - [全屏滚动]
