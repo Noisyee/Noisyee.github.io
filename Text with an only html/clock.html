@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/meyer-reset/2.0/reset.min.css">
+    <title>Document</title>
+    <style>
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+        }
+
+        .stage {
+            width: 800px;
+            height: 800px;
+            position: relative;
+            margin: 50px auto;
+        }
+
+        .point {
+            position: absolute;
+            margin: auto;
+            width: 100%;
+            height: 100%;
+        }
+
+        .point .bold {
+            width: 14px;
+            height: 6px;
+        }
+
+        .point li {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 8px;
+            height: 4px;
+            background: #fff;
+            transform-origin: 400px;
+            box-shadow: 2px 2px 15px #ffeab0;
+        }
+
+        .time {
+            position: absolute;
+        }
+
+        .time .numbers {
+            position: absolute;
+            top: 238px;
+            left: 238px;
+            font-size: 36px;
+            font-weight: 800;
+            /* line-height: 1.5; */
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            color: #fff;
+            text-shadow: 0 0 10px #ffeab0;
+        }
+
+        .hand {
+            position: absolute;
+        }
+
+        .hand .hourhand {
+            position: absolute;
+            top: 220px;
+            left: 396px;
+            width: 8px;
+            height: 240px;
+            background: #fff;
+            transform-origin: 50% 180px;
+            box-shadow: 2px 2px 8px #ffeab0;
+        }
+
+        .hand .minutehand {
+            position: absolute;
+            top: 120px;
+            left: 397px;
+            width: 6px;
+            height: 400px;
+            background: #fff;
+            transform-origin: 50% 280px;
+            box-shadow: 2px 2px 8px #ffeab0;
+        }
+
+        .hand .secondhand {
+            position: absolute;
+            top: 80px;
+            left: 398px;
+            width: 4px;
+            height: 480px;
+            background: #fff;
+            transform-origin: 50% 320px;
+            box-shadow: 2px 2px 8px #ffeab0;
+        }
+
+        .center {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background-color: lightseagreen;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="stage">
+        <div class="hand">
+            <div class="hourhand"></div>
+            <div class="minutehand"></div>
+            <div class="secondhand"></div>
+        </div>
+        <div class="point">
+            <ul>
+                <li class="bold" style='transform:translateY(400px) rotate(0deg);'></li>
+                <li style='transform:translateY(400px) rotate(6deg);'></li>
+                <li style='transform:translateY(400px) rotate(12deg);'></li>
+                <li style='transform:translateY(400px) rotate(18deg);'></li>
+                <li style='transform:translateY(400px) rotate(24deg);'></li>
+                <li class="bold" style='transform:translateY(400px) rotate(30deg);'></li>
+                <li style='transform:translateY(400px) rotate(36deg);'></li>
+                <li style='transform:translateY(400px) rotate(42deg);'></li>
+                <li style='transform:translateY(400px) rotate(48deg);'></li>
+                <li style='transform:translateY(400px) rotate(54deg);'></li>
+                <li class="bold" style='transform:translateY(400px) rotate(60deg);'></li>
+                <li style='transform:translateY(400px) rotate(66deg);'></li>
+                <li style='transform:translateY(400px) rotate(72deg);'></li>
+                <li style='transform:translateY(400px) rotate(78deg);'></li>
+                <li style='transform:translateY(400px) rotate(84deg);'></li>
+                <li class="bold" style='transform:translateY(400px) rotate(90deg);'></li>
+                <li style='transform:translateY(400px) rotate(96deg);'></li>
+                <li style='transform:translateY(400px) rotate(102deg);'></li>
+                <li style='transform:translateY(400px) rotate(108deg);'></li>
+                <li style='transform:translateY(400px) rotate(114deg);'></li>
+                <li class="bold" style='transform:translateY(400px) rotate(120deg);'></li>
+                <li style='transform:translateY(400px) rotate(126deg);'></li>
+                <li style='transform:translateY(400px) rotate(132deg);'></li>
+                <li style='transform:translateY(400px) rotate(138deg);'></li>
+                <li style='transform:translateY(400px) rotate(144deg);'></li>
+                <li class="bold" style='transform:translateY(400px) rotate(150deg);'></li>
+                <li style='transform:translateY(400px) rotate(156deg);'></li>
+                <li style='transform:translateY(400px) rotate(162deg);'></li>
+                <li style='transform:translateY(400px) rotate(168deg);'></li>
+                <li style='transform:translateY(400px) rotate(174deg);'></li>
+                <li class="bold" style='transform:translateY(400px) rotate(180deg);'></li>
+                <li style='transform:translateY(400px) rotate(186deg);'></li>
+                <li style='transform:translateY(400px) rotate(192deg);'></li>
+                <li style='transform:translateY(400px) rotate(198deg);'></li>
+                <li style='transform:translateY(400px) rotate(204deg);'></li>
+                <li class="bold" style='transform:translateY(400px) rotate(210deg);'></li>
+                <li style='transform:translateY(400px) rotate(216deg);'></li>
+                <li style='transform:translateY(400px) rotate(222deg);'></li>
+                <li style='transform:translateY(400px) rotate(228deg);'></li>
+                <li style='transform:translateY(400px) rotate(234deg);'></li>
+                <li class="bold" style='transform:translateY(400px) rotate(240deg);'></li>
+                <li style='transform:translateY(400px) rotate(246deg);'></li>
+                <li style='transform:translateY(400px) rotate(252deg);'></li>
+                <li style='transform:translateY(400px) rotate(258deg);'></li>
+                <li style='transform:translateY(400px) rotate(264deg);'></li>
+                <li class="bold" style='transform:translateY(400px) rotate(270deg);'></li>
+                <li style='transform:translateY(400px) rotate(276deg);'></li>
+                <li style='transform:translateY(400px) rotate(282deg);'></li>
+                <li style='transform:translateY(400px) rotate(288deg);'></li>
+                <li style='transform:translateY(400px) rotate(294deg);'></li>
+                <li class="bold" style='transform:translateY(400px) rotate(300deg);'></li>
+                <li style='transform:translateY(400px) rotate(306deg);'></li>
+                <li style='transform:translateY(400px) rotate(312deg);'></li>
+                <li style='transform:translateY(400px) rotate(318deg);'></li>
+                <li style='transform:translateY(400px) rotate(324deg);'></li>
+                <li class="bold" style='transform:translateY(400px) rotate(330deg);'></li>
+                <li style='transform:translateY(400px) rotate(336deg);'></li>
+                <li style='transform:translateY(400px) rotate(342deg);'></li>
+                <li style='transform:translateY(400px) rotate(348deg);'></li>
+                <li style='transform:translateY(400px) rotate(354deg);'></li>
+            </ul>
+        </div>
+        <div class="time">
+            <div class="numbers" style="transform:translate(320px,-160px);">1</div>
+            <div class="numbers" style="transform:translate(450px,-35px);">2</div>
+            <div class="numbers" style="transform:translate(505px,148px);">3</div>
+            <div class="numbers" style="transform:translate(450px,325px);">4</div>
+            <div class="numbers" style="transform:translate(320px,453px);">5</div>
+            <div class="numbers" style="transform:translate(142px,500px);">6</div>
+            <div class="numbers" style="transform:translate(-36px,453px);">7</div>
+            <div class="numbers" style="transform:translate(-166px,325px);">8</div>
+            <div class="numbers" style="transform:translate(-221px,148px);">9</div>
+            <div class="numbers" style="transform:translate(-160px,-35px);">10</div>
+            <div class="numbers" style="transform:translate(-36px,-160px);">11</div>
+            <div class="numbers" style="transform:translate(142px,-204px);">12</div>
+        </div>
+        <div class="center"></div>
+    </div>
+
+    <script>
+        var hour = document.querySelector('.hourhand')
+        var minute = document.querySelector('.minutehand')
+        var second = document.querySelector('.secondhand')
+
+        function clock() {
+            var now = new Date()
+            var h = now.getHours()
+            var m = now.getMinutes()
+            var s = now.getSeconds()
+
+            hour.style.transform = 'rotate(' + (h * 30 + m / 2 + s / 600) + 'deg)'
+            minute.style.transform = 'rotate(' + (m * 6 + s / 10) + 'deg)'
+            second.style.transform = 'rotate(' + s * 6 + 'deg)'
+        }
+        clock()
+        setInterval(clock, 1000)
+    </script>
+</body>
+
+</html>
